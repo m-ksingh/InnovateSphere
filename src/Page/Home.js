@@ -8,6 +8,7 @@ import c2 from "../Component/images/pexels-hussein-altameemi-2776353.jpg";
 import c3 from "../Component/images/pexels-vinicius-wiesehofer-1130624.jpg";
 import c4 from "../Component/images/pexels-andrea-piacquadio-845434.jpg"
 import ClientsCarousel from '../Component/Client';
+import Logo from "../Component/images/Logo.png"
 
 
 const Home = () => {
@@ -50,7 +51,7 @@ console.log(name,phone,email,message)
   return (
     <> 
       <header className="header" style={{ backgroundColor: headerBackground }}>
-        <a href="#" className="logo"><img src="https://attachments.office.net/owa/mayank.singh%40alchemyinfotech.com/service.svc/s/GetAttachmentThumbnail?id=AAMkAGNhNjEyOWY3LTRhY2UtNGRjYi1hOWI4LWVkNmZkYzQ5NDkyOABGAAAAAAAOgJKSESCHTpReFO9hJfI9BwBQqZmfVQrsSZUV5OsGuWIyAAAAAAEMAABQqZmfVQrsSZUV5OsGuWIyAAGyrkxxAAABEgAQAG0vZlqUYYVNh2YugNS%2F6IA%3D&thumbnailType=2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjczRkI5QkJFRjYzNjc4RDRGN0U4NEI0NDBCQUJCMTJBMzM5RDlGOTgiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJjX3VidnZZMmVOVDM2RXRFQzZ1eEtqT2RuNWcifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiOTBjZDJiYmRkYmE1NDFhN2EwOGM2OWQ5N2Q3ZmI3NTciLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA3NDMyN2Y2OS1kNzEwLTRhMWUtOGQxOC00NDhmMWVjOGJjZjIiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInB1aWRcIjpcIjExNTM4MDExMjAyMzA0MDA5MDJcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCJjNTY5YmI2Ni02ZTRhLTRlNTAtOWRkMi0zZTU5YTYyMTJmMTBcIixcInByaW1hcnlzaWRcIjpcIlMtMS01LTIxLTEyMjcwODQ0NC0zMTE0NDkzOTg3LTMyMzYyNzQ3NjktMjkxODg5NjdcIn0iLCJuYmYiOjE2ODc0MTYyOTAsImV4cCI6MTY4NzQxNjg5MCwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQDc0MzI3ZjY5LWQ3MTAtNGExZS04ZDE4LTQ0OGYxZWM4YmNmMiIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50cy5vZmZpY2UubmV0QDc0MzI3ZjY5LWQ3MTAtNGExZS04ZDE4LTQ0OGYxZWM4YmNmMiIsImhhcHAiOiJvd2EifQ.IeljVizvpx5HV5QkF_J18LyHYiXVKRGDsITkZROYzO-VnUgAGv3_cLU1P96FX57SbeS-pcjrhZ7ufYdpEfmVBwOL68EtYVB0AJmFrv6TDNPsiagRsG2UF4I4G-59ehPhrE7bmfsvibi3JPIA3qHu7JyYKybaZjw4BkkBnm4pvmNy_TasNQ5fKRx8ivcZdB9ysMey-OfEy0w1k353FX-SCcqvS9JVDR2fa16oXbemGbUJiEz1MWiLK3vE25oObVfuZe4zMn-NkRby37U-5F7swWyl9211I66Wcezybms_q1lPyrJ82hldb_PvbqFvFLtYAOoShWPHaAaWQ5NCPgFaCg&X-OWA-CANARY=tH8dAYtg-0iC0a0ey7oaIcBWEXLsctsY4q8ChxhA3T2RO0n3dLOXWblnB3bvlI2lqsBWJ6ppJwU.&owa=outlook.office.com&scriptVer=20230602011.24&animation=true" alt=""/></a>
+        <a href="#" className="logo"><img src={Logo} alt=""/></a>
         <div className="fas fa-bars"></div>
         <nav className="navbar">
           <ul>
@@ -58,7 +59,7 @@ console.log(name,phone,email,message)
             <li><a href="#about">about</a></li>
             <li><a href="#service">services</a></li>
             <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#team">team</a></li>
+            {/* <li><a href="#team">team</a></li> */}
             {/* <li><a href="careers.html">career</a></li> */}
             <li><a href="#contact">contact</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -213,7 +214,7 @@ Our Evolve Back Resort application offers a seamless and immersive experience fr
    
 
 
-<section class="team" style={{marginTop: "7rem"}}>
+{/* <section class="team" style={{marginTop: "7rem"}}>
   <h1 class="heading" style={{marginTop: "-1.5rem"}} id="team">our team</h1>
   <p></p>
   <div class="row">
@@ -284,7 +285,7 @@ Our Evolve Back Resort application offers a seamless and immersive experience fr
           </div>
       </div>
   </div>
-</section>
+</section> */}
 
 <section id="contact" class="contact">
     <h1 class="heading">get in touch</h1>
